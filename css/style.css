@@ -198,3 +198,8 @@ section.services .card-wrapper .card:hover h2,
 section.services .card-wrapper .card:hover p {
     color: var(--pure);
 }
+
+section.freelancer {
+    text-align: center;
+    background: linear-graient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/camera.png);
+}
