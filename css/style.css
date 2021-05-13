@@ -25,7 +25,7 @@ html {
 
 header {
     background: var(--dark);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
 }
 
 .container {
@@ -33,6 +33,36 @@ header {
     padding: 0 15px;
     margin: 0 auto;
     /* text-align: center; */
+}
+
+@media(min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        max-width: 1152px;
+    }
 }
 
 header nav .left a {
@@ -368,6 +398,7 @@ footer .copyright {
     border: none;
     outline: none;
     cursor: pointer;
+    display: none;
 }
 
 .hamberger img {
@@ -414,4 +445,81 @@ footer .copyright {
     color: var(--seconadry);
     text-decoration: none;
     font-size: 2rem;
+}
+
+@media(max-width:1024px) {
+    header #main-nav {
+        display: none;
+    }
+    .hamberger {
+        display: block;
+    }
+    .hero.left img {
+        width: 260px;
+    }
+    .hero .right h1 {
+        font-size: 3rem;
+    }
+    .hero {
+        padding-top: 10rem;
+    }
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+    }
+    section.about.about-me-img {
+        height: 360px;
+    }
+    section.services .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.work .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:576px) {
+    .hero {
+        flex-direction: column;
+    }
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 97%, 0 100%);
+    }
+    .hero .right {
+        position: absolute;
+        top: 260px;
+        padding: 0 1rem;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    }
+    .hero .left {
+        margin-top: -5rem;
+        margin-right: -9rem;
+        padding-bottom: 4rem;
+    }
+    .about-inner-wrap {
+        flex-direction: column;
+    }
+    .about .right {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .about .right .social {
+        justify-content: center;
+    }
+    section {
+        padding: 4rem 0;
+    }
+    section.services .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 6rem;
+    }
+    section.work .card-wrapper {
+        padding: 0 2rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.contact .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.contact .input-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
