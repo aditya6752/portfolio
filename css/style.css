@@ -348,3 +348,70 @@ footer .footer-socials {
 footer .copyright {
     color: var(--ternary);
 }
+
+@media(max-width:1024px) {
+    header #main-nav {
+        display: none;
+    }
+}
+
+.site-main-wrapper {
+    position: relative;
+}
+
+.hamberger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hamberger img {
+    width: 30px;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all.5s ease-in-out;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.times {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img {
+    width: 30px;
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+}
+
+.mobile-nav ul li a {
+    color: var(--seconadry);
+    text-decoration: none;
+    font-size: 2rem;
+}
