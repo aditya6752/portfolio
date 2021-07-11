@@ -314,6 +314,25 @@ section.contact .card-wrapper .card h6 {
     margin-bottom: 4rem;
 }
 
+.experience-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+    font-size: 2rem;
+}
+
+.experience-heading+p {
+    color: var(--ternary);
+    font-family: sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.experience-heading span {
+    color: var(--primary);
+}
+
 section.contact .input-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
